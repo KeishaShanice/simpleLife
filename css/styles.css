@@ -10,6 +10,13 @@ img{
     display: block;
 }
 
+.image-full {
+    max-height: 300px;
+    width: 100%;
+    object-fit: cover;
+    margin-bottom: 2em;
+}
+
 /* =================
 Typography
 ================= */
@@ -29,12 +36,21 @@ h1 {
 
 a{
     color: #1792d2;
-    text-decoration: none;
 }
 
 a:hover,
 a:focus {
     color: #143774;
+}
+
+footer a{
+    color: white;
+    text-decoration: none;
+}
+
+footer a:hover,
+a:focus {
+    color: #3ea6de;
     text-decoration: underline;
 }
 
@@ -60,7 +76,8 @@ strong {
     font-size: 0.875rem;
 }
 
-.article-read-more{
+.article-read-more,
+.about-me-heading {
     color: #1792d2;
     font-weight: 700;
     text-decoration: none;
@@ -74,6 +91,17 @@ strong {
 
 .article-info {
     margin: 2em 0;
+}
+
+.widget-title,
+.widget-recent-post-title {
+    font-size: 1rem;
+}
+
+.widget-title,
+.widget-recent-post-title {
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 700;
 }
 
 /* =================
@@ -113,6 +141,13 @@ header {
         min-width: 200px;
         margin-left: 1em;
     }
+}
+
+footer{
+    background-color: #143774;
+    color: white;
+    text-align: center;
+    padding: 3em 0;
 }
 
 /* navigation */
@@ -205,6 +240,9 @@ nav a:focus {
         height: 250px;
         object-fit: cover;
     }
+    .posLeft {
+        object-position: left;
+    }
 
     .article-info {
         order: -1;
@@ -223,9 +261,18 @@ nav a:focus {
     font-size: 1.4rem;
 }
 
-.widget-recent-post-border {
+.widget-recent-post {
+    display: flex;
+    flex-direction: column;
     border-bottom: 1px  solid  #707070;
-    padding-bottom: 1.5em;
-    margin-bottom: 1.5em;
+    margin-bottom: 1em;
 }
 
+.widget-recent-post:last-child {
+    border: 0;
+    margin: 0;
+}
+
+.widget-image {
+    order: -1;
+}
