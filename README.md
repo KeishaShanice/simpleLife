@@ -4,7 +4,7 @@
 <p>Link To Project: https://keishashanice.github.io/simpleLife/</p>
 
 <div id="header" align="center">
-  <img src="https://media.giphy.com/media/sjQX5beXz3IOdOV8JG/giphy.gif" />  
+  <img src="https://media.giphy.com/media/r0EnQwradxuXU7UEoY/giphy.gif" />  
 </div>
 
 <h2>How It's Made:</h2>
